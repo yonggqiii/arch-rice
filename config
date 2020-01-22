@@ -194,6 +194,8 @@ bindsym $mod+Ctrl+Right resize grow width 10 px
 bindsym $mod+Ctrl+Left resize shrink width 10 px
 bindsym $mod+Ctrl+Up resize grow height 10 px
 bindsym $mod+Ctrl+Down resize shrink height 10 px
+bindsym Print exec maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+Print exec maim -s | xclip -selection clipboard -t image/png
 
 # Set gaps
 for_window [class="^.*"] border pixel 0
