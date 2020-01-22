@@ -1,0 +1,55 @@
+--- config.def.h	2019-02-09 19:50:41.000000000 +0800
++++ config.h	2020-01-22 04:12:38.057509099 +0800
+@@ -5,8 +5,8 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+-static int borderpx = 2;
++static char *font = "RobotoMono Nerd Font:pixelsize=18:antialias=true:autohint=true";
++static int borderpx = 8;
+ 
+ /*
+  * What program is execed by st depends of these precedence rules:
+@@ -85,25 +85,26 @@
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+ 	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
++	"#000000",
++	"#f25056",
++	"#9cf196",
++	"#f0f69f",
++	"#a4d7e1",
++	"#e5b0ea",
++	"#7fe7cc",
++	"#dfdfdf",
+ 
+ 	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
++	"#666666",
++	"#f25056",
++	"#b0e0a8",
++	"#f0f69f",
++	"#a4d7e1",
++	"#e5b0ea",
++	"#7fe7cc",
+ 	"white",
+ 
++
+ 	[255] = 0,
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
