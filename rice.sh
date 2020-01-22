@@ -36,6 +36,7 @@ cp $pwd/plug.vim ~/.config/nvim/autoload/
 # Install ranger
 mkdir /.config/ranger/
 cp $pwd/rc.conf
+cp $pwd/rifle.conf
 
 # Get bashrc
 cp $pwd/.bashrc ~
@@ -112,6 +113,13 @@ cd
 cd ~/.aur
 git clone https://aur.archlinux.org/cli-visualizer.git
 cd cli-visualizer
+makepkg -si
+cd
+
+# Install dragon-drag-and-drop
+cd ~/.aur
+git clone https://aur.archlinux.org/dragon-drag-and-drop.git
+cd dragon-drag-and-drop
 makepkg -si
 cd
 
