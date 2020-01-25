@@ -1,22 +1,27 @@
 #!/bin/sh
 i3-msg "split h"
 i3-msg "workspace 1; exec st -e bash -c 'neofetch && bash'"
-sleep .1
+sleep .2
 i3-msg "workspace 1; exec st -e bash -c 'tty-clock -cs'"
-sleep .1
+sleep .2
 i3-msg "split v"
 i3-msg "workspace 1; exec st -e bash -c 'htop'"
-sleep .1
+sleep .2
 i3-msg "focus left"
 i3-msg "split v"
 i3-msg "workspace 1; exec st -e bash -c 'vis'"
-sleep .1
-i3-msg "resize shrink height 150 px"
-i3-msg "focus right"
-sleep .1
-i3-msg "resize grow height 130 px"
-sleep .1
-i3-msg "resize shrink width 130 px"
+sleep .2
+i3-msg "move right"
+i3-msg "move up"
+i3-msg "resize shrink height 130 px"
+i3-msg "focus up"
+i3-msg "resize shrink height 130 px"
+sleep .2
 i3-msg "focus left"
+i3-msg "resize grow width 150px"
+i3-msg "split v"
+i3-msg "workspace 1; exec st -e bash -c 'vit'"
+sleep .2
+i3-msg "resize shrink height 170 px"
 i3-msg "focus up"
 

@@ -7,7 +7,7 @@ cp $pwd/*.png ~/.local/share/backgrounds/
 cp $pwd/Roboto\ Mono\ Nerd\ Font\ Complete.ttf /usr/share/fonts/
 
 # Install man-db and man-pages
-sudo pacman -S man-db man-pages git htop pulseaudio pavucontrol w3m mupdf neofetch arandr neovim xclip ranger syncthing jdk-openjdk nodejs npm feh maim tk
+sudo pacman -S man-db man-pages git htop pulseaudio pavucontrol w3m mupdf neofetch arandr neovim xclip ranger syncthing jdk-openjdk nodejs npm feh maim tk task vit lightdm-webkit2-greeter
 
 # Make .aur directory
 mkdir ~/.aur
@@ -72,7 +72,7 @@ cd
 # Get feh
 
 # Set i3 config gaps
-cp $pwd/config ~/.config/i3/
+cp $pwd/i3config ~/.config/i3/config
 
 # Get arandr
 
@@ -131,5 +131,17 @@ git clone https://aur.archlinux.org/polybar.git
 cd polybar
 makepkg -si
 cd
+cp $pwd/polybarconfig ~/.config/polybar/config
+cp $pwd/launch.sh ~/.config/polybar/launch.sh
+
+cd ~/.aur
+git clone https://aur.archlinux.org/lightdm-webkit-theme-aether.git
+cd lightdm-webkit-theme-aether.git
+makepkg -si
+cd
+
+
+# Install lightdm-webkit2-greeter
+# Install taskwarrior and vit
 
 
