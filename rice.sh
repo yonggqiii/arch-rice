@@ -8,7 +8,7 @@ cp $pwd/*.png ~/.local/share/backgrounds/
 cp $pwd/Roboto\ Mono\ Nerd\ Font\ Complete.ttf /usr/share/fonts/
 
 # Install man-db and man-pages
-sudo pacman -S man-db man-pages git htop pulseaudio pavucontrol w3m mupdf neofetch arandr neovim xclip ranger syncthing jdk-openjdk nodejs npm feh maim tk task vit lightdm-webkit2-greeter
+sudo pacman -S man-db man-pages htop pulseaudio pavucontrol w3m mupdf neofetch arandr neovim xclip ranger syncthing jdk-openjdk nodejs npm feh maim tk task vit lightdm-webkit2-greeter
 
 # Make .aur directory
 mkdir ~/.aur
