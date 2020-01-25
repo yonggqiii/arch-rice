@@ -2,6 +2,7 @@
 
 pwd=$(pwd)
 sudo cp w1 /usr/bin/
+mkdir ~/.local/share/backgrounds/
 cp $pwd/*.jpg ~/.local/share/backgrounds/
 cp $pwd/*.png ~/.local/share/backgrounds/
 cp $pwd/Roboto\ Mono\ Nerd\ Font\ Complete.ttf /usr/share/fonts/
@@ -11,7 +12,6 @@ sudo pacman -S man-db man-pages git htop pulseaudio pavucontrol w3m mupdf neofet
 
 # Make .aur directory
 mkdir ~/.aur
-mkdir ~/.local/share/backgrounds/
 
 # Install st
 cd ~/.aur
